@@ -6,7 +6,15 @@ export default defineConfig({
   base: '/gerador-prompts-veo3/',
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  },
+  server: {
+    port: 3000
   }
 })
 
