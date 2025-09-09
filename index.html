@@ -1,14 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gerador de Prompts para VEO 3</title>
-</head>
-<body>
-  <div id="root"></div>
-  <script type="module" src="/gerador-prompts-veo3/src/main.tsx"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerador de Prompts VEO3</title>
 
-</body>
+    <!-- Ícone e manifest com caminhos RELATIVOS (evita 404 no GitHub Pages) -->
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Fonts (se você já usava) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- IMPORTANTE: apontar para o arquivo REAL de entrada do seu app -->
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 </html>
