@@ -3,18 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/gerador-prompts-veo3/',
+  base: '/gerador-prompts-veo3/', // IMPORTANTE: coloque o nome do seu repositório aqui
   build: {
     outDir: 'dist',
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined
-      }
-    }
-  },
-  server: {
-    port: 3000
   }
 })
-
