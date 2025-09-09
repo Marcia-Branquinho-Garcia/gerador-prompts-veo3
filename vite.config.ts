@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Se o repositório NO GITHUB se chama "gerador-prompts-veo3", mantenha assim.
-// Caso seu repo tenha OUTRO nome, troque aqui para `'/NOME-DO-SEU-REPO/'`.
+// ⚠️ IMPORTANTE:
+// Troque o nome aqui no "base" para o NOME EXATO do seu repositório no GitHub.
+// Exemplo: se seu repositório for "gerador-prompts-veo3", mantenha assim.
+// Se for outro nome, mude para '/NOME-DO-REPO/'.
 export default defineConfig({
   plugins: [react()],
   base: '/gerador-prompts-veo3/',
